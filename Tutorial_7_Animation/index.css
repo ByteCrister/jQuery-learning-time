@@ -1,0 +1,12 @@
+#btn-1, #btn-2, #btn-3, #btn-4, #btn-5, #btn-6, #btn-7, #btn-8, #btn-9{
+    padding: 10px;
+}
+
+.hide-div, .slide, .toggle-div, .fade-div, .fade-toggle-div, .fade-opacity-div{
+    display: none;
+    margin-top: 10px;
+    background-color: chartreuse;
+    padding: 10px;
+    /* transform: scale(0.2); */
+    font-size: large;
+}

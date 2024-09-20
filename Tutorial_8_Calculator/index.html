@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div class="calculator-main">
+    <div class="input-section">
+      <h1>Calculator</h1>
+      <input type="text" id="result" maxlength="10" />
+    </div>
+
+    <div class="button-section">
+      <div class="row-1">
+        <input type="button" class="C btn" value="C" onclick="clearInput ()"/>
+        <input type="button" class="plus-minus btn" value="+/-" />
+        <input type="button" class="percentage btn" value="%" onclick="inputValue('%')"/>
+        <input type="button" class="division btn side-color" value="/" onclick="inputValue('/')"/>
+      </div>
+
+      <div class="row-2">
+        <input type="button" class="seven btn" value="7" onclick="inputValue(7)"/>
+        <input type="button" class="eight btn" value="8" onclick="inputValue(8)"/>
+        <input type="button" class="nine btn" value="9" onclick="inputValue(9)"/>
+        <input type="button" class="multiplication btn side-color" value="X" onclick="inputValue('*')"/>
+      </div>
+
+      <div class="row-3">
+        <input type="button" class="four btn" value="4" onclick="inputValue(4)"/>
+        <input type="button" class="five btn" value="5" onclick="inputValue(5)"/>
+        <input type="button" class="six btn" value="6" onclick="inputValue(6)"/>
+        <input type="button" class="substraction btn side-color" value="-" onclick="inputValue('-')"/>
+      </div>
+
+      <div class="row-4">
+        <input type="button" class="one btn" value="1" onclick="inputValue(1)"/>
+        <input type="button" class="two btn" value="2" onclick="inputValue(2)"/>
+        <input type="button" class="three btn" value="3" onclick="inputValue(3)"/>
+        <input type="button" class="plus btn side-color" value="+" onclick="inputValue('+')"/>
+      </div>
+
+      <div class="row-5">
+        <input type="button" class="zero btn" value="O" onclick="inputValue(0)"/>
+        <input type="button" class="point btn" value="." onclick="inputValue('.')"/>
+        <input type="button" class="DEL btn" value="DEL" onclick="deleteLastDigit()"/>
+        <input type="button" class="equal btn" value="=" style="background-color: rgb(0, 247, 255)" onclick="result()"/>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
